@@ -6,17 +6,131 @@
 // PAGE COMPONENTS
 @import "blocks/header.scss";
 
+article, aside, footer, header, nav {
+  //display: block;
+}
 
 body {
-  color: #000000;
+  width: 100vh;
+  background: #f2f2f2;
+  color: #1F1F1F;
   font-family: "Roboto";
   font-size: 16px;
 }
 
-.menu {
-  display: flex;
-  a {
-    text-decoration: none;
-    margin: 10px;
+header {
+  height: 180px;
+  width: 100%;
+  border: 1px solid rgba(76, 116, 165, 0.33);
+  box-shadow: 0px 2px 4px rgba(76, 116, 165, 0.5);
+  background: #f2f2f2;
+  text-align: right;
+  position: fixed;
+  .header {
+    padding-right: 40px;
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 50px;
+      &__item {
+        margin-left: 26px;
+        position: relative;
+      }
+      &__link {
+        color: #000000;
+        opacity: 0.4;
+        text-decoration: none;
+      }
+      &__activ {
+        opacity: 1;
+      }
+    }
+  }
+  p {
+    margin: 0;
+    //padding-top: 30px;
+    //padding-right: 130px;
+    font-size: 24px;
+    padding: 30px 130px 0 0;
+  }
+  span {
+    margin-top: 0;
+    font-size: 24px;
+    padding-right: 645px;
   }
 }
+
+
+
+
+
+
+.left-sidebar {
+  position: fixed;
+  width: 33%;
+  background: #99C;
+  border: 1px dashed #333;
+  height: 100vh;
+  background: linear-gradient(298.44deg, #142429 1.48%, #2A2F43 97.97%);
+  .wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    .title {
+      font-family: Charter;
+      line-height: 44px;
+      font-size: 36px;
+      letter-spacing: 2.7px;
+      color: #FFFFFF;
+      border-right: 1px solid #FFFFFF;
+      padding-right: 30px;
+    }
+    .description {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 19px;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      color: #FFFFFF;
+    }
+  }
+
+
+
+
+
+
+
+  p {
+    padding-left: 30px;
+    font-size: 14px;
+    padding-right: 10px;
+  }
+  li {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #FFF;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+article {
+  width: 100%;
+  padding-top: 200px;
+  padding-left: 540px;
+  background: #f2f2f2;
+}
+
