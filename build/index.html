@@ -77,18 +77,29 @@
             </div>
 
 
+            <div class="left-menu">
+                <input type="radio" name="left-menu" id="questionnaire">
+                <label for="questionnaire">
+                    <span>Анкета</span>
+                </label>
 
-            <nav>
-                <!--Блок для навигации-->
-                <ul>
-                    <li><a href="#">Ссылка первая</a></li>
-                    <li><a href="#">Ссылка вторая</a></li>
-                    <li><a href="#">Ссылка третья</a></li>
-                    <li><a href="#">Ссылка четвертая</a></li>
-                    <li><a href="#">Ссылка пятая</a></li>
-                </ul>
-            </nav>
-            <p>Внимание! Этот сайдбар тоже останется на месте... ведь мы его зафиксировали</p>
+                <input type="radio" name="left-menu" id="documents" checked>
+                <label for="documents">
+                    <span>Перелік документів</span>
+                </label>
+
+                <input type="radio" name="left-menu" id="declaration">
+                <label for="declaration">
+                    <span>Декларація</span>
+                </label>
+
+                <input type="radio" name="left-menu" id="planning">
+                <label for="planning">
+                    <span>Планування</span>
+                </label>
+            </div>
+
+
 
 
         </div>
@@ -97,9 +108,7 @@
 
 
 
-        <article>
-            <!--А в этом блоке расположен контент-->
-            <h1>Здесь я специально помещу побольше контента, чтобы Вы могли поскролить!</h1>
+        <div class="right-sidebar">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at sem nec nisl ultricies dignissim quis a velit. Morbi volutpat, dolor nec scelerisque eleifend, ligula leo adipiscing ligula, id euismod nisi turpis in diam.
                 Nam purus diam, sagittis volutpat vehicula ac, adipiscing ac urna. Aliquam rutrum dignissim accumsan.
                 Donec pulvinar sem vitae dolor sodales lobortis eget in metus. Suspendisse ac augue at mi lacinia commodo eget interdum diam.
@@ -107,31 +116,31 @@
                 Etiam condimentum tincidunt tortor, at ullamcorper enim cursus sed.
                 Quisque vehicula eros sit amet leo feugiat, in rutrum diam vulputate.
                 Praesent sit amet metus sodales, aliquam libero eget, sagittis ante. Nulla vestibulum felis id bibendum accumsan.</p>
-            <!--<p>In iaculis arcu in sollicitudin pharetra. Nulla facilisi. Proin diam neque, viverra pretium mauris sit-->
-            <!--amet, placerat viverra orci. Integer suscipit congue odio, id egestas ipsum ultrices vel. Donec porttitor-->
-            <!--convallis adipiscing. Duis sollicitudin libero id sollicitudin mattis. Vestibulum pellentesque eros dui, in-->
-            <!--suscipit arcu elementum non. Integer sagittis nec risus ac suscipit.</p>-->
-            <!--<p>Aenean a nunc id nunc ornare varius. Donec volutpat nisi et metus pulvinar pellentesque.-->
-            <!--Etiam porta mauris nec consectetur sagittis. Nunc ligula risus, sollicitudin at lacus eu, sodales vehicula quam.-->
-            <!--Suspendisse venenatis sapien sed rutrum laoreet. Suspendisse facilisis risus a augue facilisis scelerisque.-->
-            <!--Pellentesque tristique tellus ac bibendum rutrum. Etiam nulla urna, molestie id bibendum sodales, rutrum nec sapien.-->
-            <!--Nulla facilisi. Praesent ut enim erat. Phasellus ultrices leo id dui condimentum, et pharetra magna lacinia.-->
-            <!--Nulla sit amet sagittis tortor.</p>-->
-            <!--<p>Vivamus id neque magna. Phasellus suscipit orci quis tortor accumsan, vitae vestibulum leo ultrices.-->
-            <!--Donec viverra lorem vel purus vestibulum suscipit. Sed congue erat tincidunt nibh ultrices tempor.-->
-            <!--In hac habitasse platea dictumst. Nam non pellentesque dolor. Phasellus elementum lobortis orci at posuere.-->
-            <!--Ut eget felis accumsan, sollicitudin ante quis, venenatis felis. Ut nec mi ornare, ultricies orci vel, pharetra odio.-->
-            <!--Mauris ultrices felis quis nulla ornare, volutpat facilisis libero molestie. Ut sodales pellentesque arcu.-->
-            <!--Ut commodo ipsum ut hendrerit semper. Ut laoreet massa risus, quis facilisis ligula ullamcorper at.-->
-            <!--Nullam nec velit in sem semper ornare.</p>-->
-            <!--<p>Fusce a dictum leo, ut sagittis mi. Curabitur tempus elementum lobortis.-->
-            <!--Duis ultricies tincidunt enim, in porta turpis condimentum pellentesque. Nulla augue libero, accumsan nec-->
-            <!--imperdiet ut, hendrerit at erat. In hac habitasse platea dictumst. Suspendisse ullamcorper venenatis est non pulvinar.-->
-            <!--Pellentesque nec placerat elit. Maecenas sit amet mi enim. In ut velit nec leo sagittis vehicula nec a mi.-->
-            <!--Suspendisse ut vehicula arcu, vitae dictum magna. Maecenas odio ante, luctus nec hendrerit et, pellentesque a mi.-->
-            <!--Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc id condimentum eros.-->
-            <!--Nulla lobortis congue libero, eget tincidunt dolor venenatis in. Nunc ut auctor orci.</p>-->
-        </article>
+            <p>In iaculis arcu in sollicitudin pharetra. Nulla facilisi. Proin diam neque, viverra pretium mauris sit
+                amet, placerat viverra orci. Integer suscipit congue odio, id egestas ipsum ultrices vel. Donec porttitor
+                convallis adipiscing. Duis sollicitudin libero id sollicitudin mattis. Vestibulum pellentesque eros dui, in
+                suscipit arcu elementum non. Integer sagittis nec risus ac suscipit.</p>
+            <p>Aenean a nunc id nunc ornare varius. Donec volutpat nisi et metus pulvinar pellentesque.
+                Etiam porta mauris nec consectetur sagittis. Nunc ligula risus, sollicitudin at lacus eu, sodales vehicula quam.
+                Suspendisse venenatis sapien sed rutrum laoreet. Suspendisse facilisis risus a augue facilisis scelerisque.
+                Pellentesque tristique tellus ac bibendum rutrum. Etiam nulla urna, molestie id bibendum sodales, rutrum nec sapien.
+                Nulla facilisi. Praesent ut enim erat. Phasellus ultrices leo id dui condimentum, et pharetra magna lacinia.
+                Nulla sit amet sagittis tortor.</p>
+            <p>Vivamus id neque magna. Phasellus suscipit orci quis tortor accumsan, vitae vestibulum leo ultrices.
+                Donec viverra lorem vel purus vestibulum suscipit. Sed congue erat tincidunt nibh ultrices tempor.
+                In hac habitasse platea dictumst. Nam non pellentesque dolor. Phasellus elementum lobortis orci at posuere.
+                Ut eget felis accumsan, sollicitudin ante quis, venenatis felis. Ut nec mi ornare, ultricies orci vel, pharetra odio.
+                Mauris ultrices felis quis nulla ornare, volutpat facilisis libero molestie. Ut sodales pellentesque arcu.
+                Ut commodo ipsum ut hendrerit semper. Ut laoreet massa risus, quis facilisis ligula ullamcorper at.
+                Nullam nec velit in sem semper ornare.</p>
+            <p>Fusce a dictum leo, ut sagittis mi. Curabitur tempus elementum lobortis.
+                Duis ultricies tincidunt enim, in porta turpis condimentum pellentesque. Nulla augue libero, accumsan nec
+                imperdiet ut, hendrerit at erat. In hac habitasse platea dictumst. Suspendisse ullamcorper venenatis est non pulvinar.
+                Pellentesque nec placerat elit. Maecenas sit amet mi enim. In ut velit nec leo sagittis vehicula nec a mi.
+                Suspendisse ut vehicula arcu, vitae dictum magna. Maecenas odio ante, luctus nec hendrerit et, pellentesque a mi.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc id condimentum eros.
+                Nulla lobortis congue libero, eget tincidunt dolor venenatis in. Nunc ut auctor orci.</p>
+        </div>
 
 
 

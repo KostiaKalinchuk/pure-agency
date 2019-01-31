@@ -499,28 +499,61 @@ header {
       border-right: 1px solid #FFFFFF;
       padding-right: 30px; }
     .left-sidebar .wrapper .description {
-      font-family: Roboto;
       font-style: normal;
       font-weight: normal;
       line-height: 19px;
       font-size: 14px;
       letter-spacing: 0.8px;
       color: #FFFFFF; }
-  .left-sidebar p {
-    padding-left: 30px;
-    font-size: 14px;
-    padding-right: 10px; }
-  .left-sidebar li {
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif; }
-  .left-sidebar a {
-    text-decoration: none;
-    color: #FFF; }
+  .left-sidebar .left-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-right: 40px;
+    margin-top: 120px; }
+    .left-sidebar .left-menu span {
+      margin-right: 20px;
+      line-height: 39px;
+      font-size: 24px;
+      text-align: right;
+      color: #FFFFFF;
+      mix-blend-mode: normal;
+      opacity: 0.4; }
+    .left-sidebar .left-menu label::after {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+              box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+      background: rgba(255, 255, 255, 0.329512);
+      margin-top: 40px;
+      margin-bottom: -3px;
+      border-radius: 50%;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+    .left-sidebar .left-menu input[type="radio"] {
+      display: none; }
+    .left-sidebar .left-menu input[type="radio"]:checked + label::after {
+      background: linear-gradient(298.44deg, #142429 1.48%, #2A2F43 97.97%);
+      width: 24px;
+      height: 24px;
+      margin-right: -5px;
+      border: 1px solid #FFFFFF;
+      -webkit-box-shadow: 1px 0px 4px rgba(255, 255, 255, 0.5);
+              box-shadow: 1px 0px 4px rgba(255, 255, 255, 0.5); }
 
-article {
+.right-sidebar {
   width: 100%;
   padding-top: 200px;
-  padding-left: 540px;
+  padding-left: 550px;
   background: #f2f2f2; }
 
 /*# sourceMappingURL=style.css.map */
