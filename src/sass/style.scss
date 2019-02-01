@@ -6,13 +6,9 @@
 // PAGE COMPONENTS
 @import "blocks/header.scss";
 
-article, aside, footer, header, nav {
-  //display: block;
-}
-
 body {
   width: 100vh;
-  background: #f2f2f2;
+  background: #ffffff;
   color: #1F1F1F;
   font-family: "Roboto";
   font-size: 16px;
@@ -22,8 +18,8 @@ header {
   height: 180px;
   width: 100%;
   border: 1px solid rgba(76, 116, 165, 0.33);
-  box-shadow: 0px 2px 4px rgba(76, 116, 165, 0.5);
-  background: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(76, 116, 165, 0.5);
+  background: #ffffff;
   text-align: right;
   position: fixed;
   .header {
@@ -49,8 +45,6 @@ header {
   }
   p {
     margin: 0;
-    //padding-top: 30px;
-    //padding-right: 130px;
     font-size: 24px;
     padding: 30px 130px 0 0;
   }
@@ -64,7 +58,6 @@ header {
 .left-sidebar {
   position: fixed;
   width: 33%;
-  background: #99C;
   border: 1px dashed #333;
   height: 100vh;
   background: linear-gradient(298.44deg, #142429 1.48%, #2A2F43 97.97%);
@@ -91,6 +84,9 @@ header {
     }
   }
   .left-menu {
+    //display: none;
+    //visibility: hidden;
+    transition: all 5s;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -104,6 +100,7 @@ header {
       color: #FFFFFF;
       mix-blend-mode: normal;
       opacity: 0.4;
+      cursor: pointer
     }
     label::after {
       content: '';
@@ -120,7 +117,7 @@ header {
     input[type="radio"] {
       display: none;
     }
-    input[type="radio"]:checked + label::after{
+    input[type="radio"]:checked + label::after {
       background: linear-gradient(298.44deg, #142429 1.48%, #2A2F43 97.97%);
       width: 24px;
       height: 24px;
@@ -129,35 +126,82 @@ header {
       box-shadow: 1px 0px 4px rgba(255, 255, 255, 0.5);
     }
   }
+
+  .wrapper-menu {
+    display: none;
+    width: 100%;
+    //display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    .arrow {
+      margin-top: 20px;
+      cursor: pointer
+    }
+    .wrapper-menu__li {
+      text-align: right;
+      margin: 0;
+      padding-right: 16px;
+
+      input[type="radio"] {
+        display: none;
+      }
+      label::after {
+        content: '';
+        display: inline-block;
+        background: linear-gradient(298.44deg, #142429 1.48%, #2A2F43 97.97%);
+        width: 24px;
+        height: 24px;
+        border: 1px solid #FFFFFF;
+        box-shadow: 1px 0px 4px rgba(255, 255, 255, 0.5);
+        margin-bottom: -9px;
+        margin-right: -13px;
+        border-radius: 50%;
+        transition: all 0.5s;
+      }
+      span {
+        margin-right: 15px;
+        line-height: 39px;
+        font-size: 24px;
+        text-align: right;
+        color: #ffffff;
+      }
+      li {
+        position: relative;
+        list-style: none outside none;
+        border-right: solid 1px #999;
+        margin: 0;
+        padding: 0 22px 20px 5px;
+        a {
+          line-height: 23px;
+          color: #ffffff;
+          opacity: 0.4;
+          font-size: 18px;
+          text-decoration: none;
+        }
+      }
+      li:before {
+        content: '';
+        display: block;
+        border-bottom: solid 1px #999;
+        position: absolute;
+        width: 18px;
+        height: 11px;
+        right: 0;
+        top: 0;
+      }
+      li:last-child {
+        border-right: 0 none;
+      }
+      li:last-child:before {
+        border-right: solid 1px #999;
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .right-sidebar {
   width: 100%;
   padding-top: 200px;
   padding-left: 550px;
-  background: #f2f2f2;
+  background: #ffffff;
 }
-

@@ -3007,3 +3007,15 @@
 }));
 ;
 ;
+
+
+
+document.getElementById('declaration').onclick = function() {
+    document.getElementsByClassName('left-menu')[0].style.display = 'none';
+    document.getElementsByClassName('wrapper-menu')[0].style.display = 'flex';
+};
+
+document.getElementsByClassName('arrow')[0].onclick = function() {
+    document.getElementsByClassName('left-menu')[0].style.display = 'flex';
+    document.getElementsByClassName('wrapper-menu')[0].style.display = 'none';
+};
