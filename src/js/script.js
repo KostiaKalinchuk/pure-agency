@@ -2,14 +2,14 @@
 @@include('partials/slick.js');
 @@include('partials/main.js');
 
+$('#declaration').click(function () {
+    $(this).toggleClass('active');
+    $('.wrapper-menu').slideToggle('slow').css('display', 'flex');
+    $('.left-menu').css('display', 'none');
+});
 
-
-document.getElementById('declaration').onclick = function() {
-    document.getElementsByClassName('left-menu')[0].style.display = 'none';
-    document.getElementsByClassName('wrapper-menu')[0].style.display = 'flex';
-};
-
-document.getElementsByClassName('arrow')[0].onclick = function() {
-    document.getElementsByClassName('left-menu')[0].style.display = 'flex';
-    document.getElementsByClassName('wrapper-menu')[0].style.display = 'none';
-};
+$('.arrow').click(function () {
+    $(this).toggleClass('active');
+    $('.left-menu').slideToggle('slow').css('display', 'flex');
+    $('.wrapper-menu').css('display', 'none');
+});

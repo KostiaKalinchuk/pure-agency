@@ -505,8 +505,6 @@ header {
       letter-spacing: 0.8px;
       color: #FFFFFF; }
   .left-sidebar .left-menu {
-    -webkit-transition: all 5s;
-    transition: all 5s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
